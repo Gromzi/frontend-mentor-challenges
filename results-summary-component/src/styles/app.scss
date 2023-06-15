@@ -1,6 +1,10 @@
 body {
   margin: 0;
 }
+p {
+  margin: 0;
+  padding: 0;
+}
 
 .mainContainer {
   width: 100vw;
@@ -36,8 +40,16 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+
+    .summaryCardHeader {
+      width: 100%;
+      margin-top: 1rem;
+      padding-left: 2rem;
+
+      font-weight: bold;
+    }
   }
 }
 
