@@ -1,7 +1,12 @@
+import Attribution from './components/Attribution'
+import ResultsSummaryComponent from './components/ResultsSummaryComponent'
+
 function App() {
   return (
     <>
-      <p>Frontend Mentor | Results summary component</p>
+      <ResultsSummaryComponent />
+
+      <Attribution />
     </>
   )
 }
