@@ -1,8 +1,6 @@
 import Stat from './Stat'
 import data from '../data/data.json'
 
-console.log(data)
-
 const Stats = () => {
   return (
     <div className="statsContainer">
