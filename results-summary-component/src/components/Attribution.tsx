@@ -8,7 +8,8 @@ const Attribution = () => {
       >
         Frontend Mentor
       </a>
-      . Coded by <a href="#">Your Name Here</a>.
+      . Coded by <a href="https://github.com/Gromzi">Michał Gierak</a>
+      .
     </div>
   )
 }

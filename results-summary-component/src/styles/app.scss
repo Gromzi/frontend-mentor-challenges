@@ -5,19 +5,23 @@
 }
 @font-face {
   font-family: 'HankenGroteskBold';
-  src: url('/assets/fonts/HankenGrotesk-Bold.ttf') format('truetype');
+  src: url('/assets/fonts/static/HankenGrotesk-Bold.ttf')
+    format('truetype');
 }
 @font-face {
   font-family: 'HankenGroteskExtraBold';
-  src: url('/assets/fonts/HankenGrotesk-ExtraBold.ttf')
+  src: url('/assets/fonts/static/HankenGrotesk-ExtraBold.ttf')
     format('truetype');
 }
 @font-face {
   font-family: 'HankenGroteskMedium';
-  src: url('/assets/fonts/HankenGrotesk-Medium.ttf')
+  src: url('/assets/fonts/static/HankenGrotesk-Medium.ttf')
     format('truetype');
 }
-
+* {
+  box-sizing: border-box;
+  font-family: 'HankenGrotesk', sans-serif;
+}
 body {
   margin: 0;
 }
@@ -36,8 +40,7 @@ p {
   justify-content: start;
   align-items: center;
 
-  box-sizing: border-box;
-  border: 3px solid red;
+  // border: 3px solid red;
 
   .resultCard {
     width: 100%;
@@ -66,10 +69,46 @@ p {
     .summaryCardHeader {
       width: 100%;
       margin-top: 1rem;
-      padding-left: 2rem;
+      padding-left: 1.5rem;
 
-      font-weight: bold;
       font-family: 'HankenGroteskBold', sans-serif;
+    }
+
+    .statsContainer {
+      width: 100%;
+      height: 100%;
+      padding: 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      // border: 3px solid blue;
+
+      .statContainer {
+        display: flex;
+        justify-content: space-between;
+
+        .iconAndCategory {
+          display: flex;
+          gap: 0.5rem;
+        }
+
+        .statScore {
+          color: gray;
+        }
+      }
+    }
+
+    .continueButton {
+      font-family: HankenGroteskBold;
+      background-color: #303b59;
+      border: none;
+      border-radius: 100px;
+      color: white;
+      padding: 15px 35%;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
     }
   }
 }
@@ -80,6 +119,8 @@ p {
   bottom: 2svh;
   font-size: 16px;
   text-align: center;
+
+  border: 2px solid black;
 
   a {
     color: hsl(228, 45%, 44%);
