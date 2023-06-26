@@ -24,6 +24,18 @@
 }
 body {
   margin: 0;
+  width: 100vw;
+  height: 100svh;
+
+  background-color: #3f3f3f;
+  display: flex;
+  align-items: center;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 p {
   margin: 0;
@@ -32,7 +44,9 @@ p {
 
 .mainContainer {
   width: 100vw;
-  height: 100svh;
+  height: fit-content;
+
+  background-color: white;
 
   padding-bottom: 0.5rem;
 
@@ -55,13 +69,13 @@ p {
 
     background-image: linear-gradient(#6845fa, #332be6);
 
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 
     .resultHeader {
       width: 100%;
       text-align: center;
-      margin-top: 1rem;
+      padding-top: 4rem;
       color: #b3a2f8;
 
       font-family: 'HankenGroteskBold', sans-serif;
@@ -97,7 +111,7 @@ p {
       flex-direction: column;
       text-align: center;
       gap: 0.5rem;
-      padding: 0.5rem 2rem 2rem 2rem;
+      padding: 0.5rem 4rem 2rem 4rem;
 
       .resultTextHeader {
         font-size: 1.25rem;
@@ -119,7 +133,7 @@ p {
 
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 
     .summaryCardHeader {
@@ -182,5 +196,57 @@ p {
 
   a {
     color: hsl(228, 45%, 44%);
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  .mainContainer {
+    flex-direction: row;
+    // height: 450px;
+    // height: auto;
+
+    justify-content: start;
+    align-items: center;
+
+    border-radius: 30px;
+
+    padding-bottom: 0;
+
+    .resultCard {
+      width: 50%;
+      height: 400px;
+
+      justify-content: start;
+      border-radius: 30px;
+
+      .resultHeader {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      .resultCircle {
+        width: 150px;
+        height: 150px;
+        gap: 0;
+      }
+    }
+
+    .summaryCard {
+      width: 50%;
+      height: 400px;
+
+      justify-content: start;
+
+      padding-bottom: 1rem;
+
+      .summaryCardHeader {
+        margin-top: 2rem;
+      }
+
+      .continueButton {
+        width: 250px;
+        padding: 15px 20%;
+      }
+    }
   }
 }
