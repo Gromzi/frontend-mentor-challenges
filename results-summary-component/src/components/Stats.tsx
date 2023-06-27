@@ -11,6 +11,7 @@ const Stats = () => {
           score={stat.score}
           icon={stat.icon}
           color={stat.color}
+          bgColor={stat.bgColor}
         />
       ))}
     </div>

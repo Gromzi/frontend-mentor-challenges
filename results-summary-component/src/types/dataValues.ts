@@ -3,6 +3,7 @@ interface dataValues {
   score: number
   icon: string
   color: string
+  bgColor: string
   key: string
 }
 

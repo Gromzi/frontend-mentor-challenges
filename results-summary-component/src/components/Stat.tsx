@@ -2,7 +2,10 @@ import dataValues from '../types/dataValues'
 
 const Stat = (data: dataValues) => {
   return (
-    <div className="statContainer">
+    <div
+      className="statContainer"
+      style={{ backgroundColor: data.bgColor }}
+    >
       <div className="iconAndCategory">
         <img
           src={data.icon}
