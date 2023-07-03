@@ -1,7 +1,11 @@
+import ContentContainer from './components/ContentContainer'
+import NavContainer from './components/NavContainer'
+
 function App() {
   return (
     <div className="mainContainer">
-      <p>Test a;alskd;;a al;kdja; ljk</p>
+      <NavContainer />
+      <ContentContainer />
     </div>
   )
 }
